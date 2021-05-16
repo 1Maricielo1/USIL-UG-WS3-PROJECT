@@ -6,7 +6,6 @@ Realizado por Alvaro Rivera, Darlin Lopez, Joel Ninasivincha, Maricielo Zamora, 
 
 ##  Herramientas
 
-- [Google Meet](https://meet.google.com/)
 - [Carbon](https://carbon.now.sh/)
 - [When2Meet](https://www.when2meet.com/)
 
