@@ -2,7 +2,7 @@
 
 ![Apache NetBeans Banner](https://www.mancomun.gal/wp-content/uploads/2019/04/apacheNetBeans.jpeg)
 
-Realizado por Alvaro Rivera, Darlin Lopez, Joel Ninasivincha, Maricielo Zamora, y Angel Mejia.
+Realizado por Alvaro Rivera, Darlin Lopez, Joel Ninasivincha, Maricielo Zamora, Omar Echevarria y Angel Mejia.
 
 ##  Herramientas
 
