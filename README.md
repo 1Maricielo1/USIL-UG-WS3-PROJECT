@@ -18,3 +18,4 @@ Realizado por Alvaro Rivera, Darlin Lopez, Joel Ninasivincha, Maricielo Zamora, 
 
 - [¿Cómo clonar un repositorio en Apache NetBeans?](https://youtu.be/eV_Dwz2toPw)
 - [¿Cómo hacer cambios a un repositorio en Apache NetBeans?](https://www.youtube.com/watch?v=8MJg4wJmbbA)
+- [¿Cómo jalar cambios de un repositorio en Apache NetBeans?](https://youtu.be/jB9OgUYjnvw)
