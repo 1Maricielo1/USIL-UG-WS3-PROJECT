@@ -10,5 +10,4 @@ package Beans;
  * @author Insaw
  */
 public class Producto {
-    System.out.println("Hello World");
 }
