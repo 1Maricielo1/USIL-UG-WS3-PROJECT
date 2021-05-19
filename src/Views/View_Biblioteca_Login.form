@@ -26,10 +26,10 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="txtPassword" max="32767" attributes="0"/>
-                  <Component id="txtEmail" max="32767" attributes="0"/>
-                  <Component id="btnSignIn" max="32767" attributes="0"/>
-                  <Component id="btnForgotPassword" max="32767" attributes="0"/>
+                  <Component id="txtContraseña" max="32767" attributes="0"/>
+                  <Component id="txtCorreoElectronico" max="32767" attributes="0"/>
+                  <Component id="btnIniciarSesion" max="32767" attributes="0"/>
+                  <Component id="btnSalir" max="32767" attributes="0"/>
                   <Component id="jLabel1" max="32767" attributes="0"/>
                   <Component id="jLabel2" min="-2" pref="142" max="-2" attributes="0"/>
               </Group>
@@ -43,49 +43,52 @@
               <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
               <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" max="-2" attributes="0"/>
-              <Component id="txtEmail" min="-2" max="-2" attributes="0"/>
+              <Component id="txtCorreoElectronico" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" max="-2" attributes="0"/>
               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" max="-2" attributes="0"/>
-              <Component id="txtPassword" min="-2" max="-2" attributes="0"/>
+              <Component id="txtContraseña" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
-              <Component id="btnSignIn" min="-2" max="-2" attributes="0"/>
+              <Component id="btnIniciarSesion" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
-              <Component id="btnForgotPassword" min="-2" max="-2" attributes="0"/>
+              <Component id="btnSalir" min="-2" max="-2" attributes="0"/>
               <EmptySpace pref="28" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JTextField" name="txtPassword">
+    <Component class="javax.swing.JTextField" name="txtContrase&#xf1;a">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtPasswordActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtContrase&#xf1;aActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtEmail">
+    <Component class="javax.swing.JTextField" name="txtCorreoElectronico">
     </Component>
-    <Component class="javax.swing.JButton" name="btnSignIn">
+    <Component class="javax.swing.JButton" name="btnIniciarSesion">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Sign in"/>
+        <Property name="text" type="java.lang.String" value="Iniciar sesi&#xf3;n"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSignInActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnIniciarSesionActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="btnForgotPassword">
+    <Component class="javax.swing.JButton" name="btnSalir">
       <Properties>
-        <Property name="text" type="java.lang.String" value="I forgot my password"/>
+        <Property name="text" type="java.lang.String" value="Salir"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSalirActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Password"/>
+        <Property name="text" type="java.lang.String" value="Contrase&#xf1;a"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Email"/>
+        <Property name="text" type="java.lang.String" value="Correo electr&#xf3;nico"/>
       </Properties>
     </Component>
   </SubComponents>
