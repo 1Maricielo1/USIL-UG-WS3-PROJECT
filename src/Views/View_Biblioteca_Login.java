@@ -5,6 +5,7 @@
  */
 package Views;
 
+
 /**
  *
  * @author Insaw
@@ -14,10 +15,13 @@ public class View_Biblioteca_Login extends javax.swing.JFrame {
     /**
      * Creates new form View_Biblioteca_Login
      */
-    public View_Biblioteca_Login() {
+    View_Biblioteca_Dashboard viewDashBoard = new View_Biblioteca_Dashboard();
+    
+    public View_Biblioteca_Login()
+    {
         initComponents();
     }
-
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -27,33 +31,38 @@ public class View_Biblioteca_Login extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        txtPassword = new javax.swing.JTextField();
-        txtEmail = new javax.swing.JTextField();
-        btnSignIn = new javax.swing.JButton();
-        btnForgotPassword = new javax.swing.JButton();
+        txtContraseña = new javax.swing.JTextField();
+        txtCorreoElectronico = new javax.swing.JTextField();
+        btnIniciarSesion = new javax.swing.JButton();
+        btnSalir = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        txtPassword.addActionListener(new java.awt.event.ActionListener() {
+        txtContraseña.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtPasswordActionPerformed(evt);
+                txtContraseñaActionPerformed(evt);
             }
         });
 
-        btnSignIn.setText("Sign in");
-        btnSignIn.addActionListener(new java.awt.event.ActionListener() {
+        btnIniciarSesion.setText("Iniciar sesión");
+        btnIniciarSesion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSignInActionPerformed(evt);
+                btnIniciarSesionActionPerformed(evt);
             }
         });
 
-        btnForgotPassword.setText("I forgot my password");
+        btnSalir.setText("Salir");
+        btnSalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalirActionPerformed(evt);
+            }
+        });
 
-        jLabel1.setText("Password");
+        jLabel1.setText("Contraseña");
 
-        jLabel2.setText("Email");
+        jLabel2.setText("Correo electrónico");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -62,10 +71,10 @@ public class View_Biblioteca_Login extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(24, 24, 24)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(txtPassword)
-                    .addComponent(txtEmail)
-                    .addComponent(btnSignIn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnForgotPassword, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(txtContraseña)
+                    .addComponent(txtCorreoElectronico)
+                    .addComponent(btnIniciarSesion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnSalir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(27, Short.MAX_VALUE))
@@ -76,28 +85,38 @@ public class View_Biblioteca_Login extends javax.swing.JFrame {
                 .addGap(26, 26, 26)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(txtCorreoElectronico, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(txtContraseña, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(btnSignIn)
+                .addComponent(btnIniciarSesion)
                 .addGap(18, 18, 18)
-                .addComponent(btnForgotPassword)
+                .addComponent(btnSalir)
                 .addContainerGap(28, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPasswordActionPerformed
+    private void txtContraseñaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtContraseñaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtPasswordActionPerformed
+        this.setVisible(false);
+        viewDashBoard.setVisible(true);
+        // discutir creacion de vista reset password
+    }//GEN-LAST:event_txtContraseñaActionPerformed
 
-    private void btnSignInActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSignInActionPerformed
+    private void btnIniciarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIniciarSesionActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnSignInActionPerformed
+        this.dispose();
+        viewDashBoard.setVisible(true);
+    }//GEN-LAST:event_btnIniciarSesionActionPerformed
+
+    private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+    }//GEN-LAST:event_btnSalirActionPerformed
 
     /**
      * @param args the command line arguments
@@ -135,11 +154,11 @@ public class View_Biblioteca_Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnForgotPassword;
-    private javax.swing.JButton btnSignIn;
+    private javax.swing.JButton btnIniciarSesion;
+    private javax.swing.JButton btnSalir;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JTextField txtEmail;
-    private javax.swing.JTextField txtPassword;
+    private javax.swing.JTextField txtContraseña;
+    private javax.swing.JTextField txtCorreoElectronico;
     // End of variables declaration//GEN-END:variables
 }
