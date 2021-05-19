@@ -3,11 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Beans;
+package Controllers;
 
 /**
  *
  * @author Insaw
  */
-public class Producto {
+public class Controller_Autor {
+    
 }
