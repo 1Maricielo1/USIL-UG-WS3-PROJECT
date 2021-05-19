@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Beans;
+package Views;
 
 /**
  *
  * @author Insaw
  */
-public class Beans_Tema {
+public class View_Biblioteca_Formulario_Prestamo {
     
 }

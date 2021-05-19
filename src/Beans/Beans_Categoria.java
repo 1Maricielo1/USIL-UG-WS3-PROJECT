@@ -9,25 +9,25 @@ package Beans;
  *
  * @author Insaw
  */
-public class Beans_Autor {
-    
-    private Integer claveautor;
+public class Beans_Categoria
+{
+    private Integer clavecategoria;
     private String nombre;
     
-    public Beans_Autor(Integer claveautor, String nombre)
+    public Beans_Categoria(Integer clavecategoria, String nombre)
     {
-        this.claveautor = claveautor;
+        this.clavecategoria = clavecategoria;
         this.nombre = nombre;
     }
     
-    public Beans_Autor(){}
+    public Beans_Categoria(){}
 
-    public Integer getClaveautor() {
-        return claveautor;
+    public Integer getClavecategoria() {
+        return clavecategoria;
     }
 
-    public void setClaveautor(Integer claveautor) {
-        this.claveautor = claveautor;
+    public void setClavecategoria(Integer clavecategoria) {
+        this.clavecategoria = clavecategoria;
     }
 
     public String getNombre() {
@@ -37,4 +37,6 @@ public class Beans_Autor {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+    
+    
 }
