@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Beans;
+package Models;
 
 /**
  *
  * @author Insaw
  */
-public class Beans_Tema {
+public class Model_Categoria {
     
 }

@@ -9,6 +9,6 @@ package Controllers;
  *
  * @author Insaw
  */
-public class Controller_Tema {
+public class Controller_Categoria {
     
 }

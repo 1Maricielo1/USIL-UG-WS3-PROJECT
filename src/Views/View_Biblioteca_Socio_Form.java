@@ -9,12 +9,12 @@ package Views;
  *
  * @author Insaw
  */
-public class View_Biblioteca_Formulario_Autor extends javax.swing.JFrame {
+public class View_Biblioteca_Socio_Form extends javax.swing.JFrame {
 
     /**
-     * Creates new form View_Biblioteca_Formulario_Autor
+     * Creates new form View_Biblioteca_Socio_Form
      */
-    public View_Biblioteca_Formulario_Autor() {
+    public View_Biblioteca_Socio_Form() {
         initComponents();
     }
 
@@ -60,20 +60,20 @@ public class View_Biblioteca_Formulario_Autor extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(View_Biblioteca_Formulario_Autor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(View_Biblioteca_Socio_Form.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(View_Biblioteca_Formulario_Autor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(View_Biblioteca_Socio_Form.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(View_Biblioteca_Formulario_Autor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(View_Biblioteca_Socio_Form.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(View_Biblioteca_Formulario_Autor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(View_Biblioteca_Socio_Form.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new View_Biblioteca_Formulario_Autor().setVisible(true);
+                new View_Biblioteca_Socio_Form().setVisible(true);
             }
         });
     }
