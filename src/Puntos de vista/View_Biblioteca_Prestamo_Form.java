@@ -14,8 +14,39 @@ public class View_Biblioteca_Prestamo_Form extends javax.swing.JFrame {
     View_Biblioteca_Dashboard viewDashboard = new View_Biblioteca_Dashboard();
     View_Biblioteca_Login viewLogin = new View_Biblioteca_Login();
     public View_Biblioteca_Prestamo_Form() {
-        initComponents();
+        initComponents();  llenaColumna();
+        
+        listar();
     }
+    public void llenaColumna(){
+        dtmPrestamo.addColumn("Codigo");
+        dtmPrestamo.addColumn("Fecha Prestamo");
+        dtmPrestamo.addColumn("Fecha Devolucion");
+        dtmPrestamo.addColumn("Codigo Socio");
+        dtmPrestamo.addColumn("Codigo Libro");
+        
+        this.Tprestamo.setModel(dtmPrestamo);
+    }
+    
+    public void listar(){
+        List<Beans_Prestamo> lst = new Controller_Prestamo().getListadoPrestamo();
+        dtmPrestamo.setRowCount(0);
+        for(Beans_Prestamo obj:lst){
+            Object[ ]vec=new Object[ 5];
+            vec[ 0]=obj.getClavelibro();
+            vec[ 1]=obj.getFecha_prestamo();
+            vec[2]=obj.getFecha_devolucion();
+            vec[3]=obj.getClavesocio();
+            vec[4]=obj.getClavelibro();
+             
+             dtmPrestamo.addRow(vec);
+            
+        }
+        Tprestamo.setModel(dtmPrestamo);
+        
+    }
+    
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
